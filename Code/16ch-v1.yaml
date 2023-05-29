@@ -1,0 +1,303 @@
+substitutions:
+  name: "ledbrickhome-16ch"
+  friendly_name: "LEDBrickHome"
+  project_name: "AlexCPU.ledbrickhome-16ch"
+  project_version: "1.0"
+  hidden_ssid: "false"
+
+esphome:
+  name: "${name}"
+  name_add_mac_suffix: true
+  project:
+    name: "${project_name}"
+    version: "${project_version}"
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+    version: recommended
+
+logger:
+
+api:
+
+ota:
+
+wifi:
+  fast_connect: ${hidden_ssid}
+  ap: {}
+
+captive_portal:
+
+improv_serial:
+
+esp32_improv:
+  authorizer: none
+  
+dashboard_import:
+  package_import_url: github://AlexCPU/LEDBrickHome/Code/16ch-v1.yaml@main
+  import_full_config: false
+
+binary_sensor:
+  - platform: status
+    name: "${friendly_name} Status"
+
+sensor:
+  - platform: uptime
+    name: "${friendly_name} Uptime"
+    disabled_by_default: true
+
+button:
+  - platform: restart
+    id: restart_button
+    name: "${friendly_name} Restart"
+
+time:
+  - platform: sntp
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "${friendly_name} IP Address"
+      disabled_by_default: true
+
+light:
+# Details for each of the outputs.
+# see https://esphome.io/components/light/index.html#light-effects for configuration
+# of light effects
+
+# Group 1:
+# to use RGB light, uncomment it's section and comment the monochromatic lights
+  - platform: monochromatic
+    name: "Channel 1"
+    output: output_ch1
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 2"
+    output: output_ch2
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 3"
+    output: output_ch3
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+#  - platform: rgb
+#    name: "RGB1"
+#    # Output channels may need swapping to match the wiring of your light
+#    red: output_ch1
+#    green: output_ch2
+#    blue: output_ch3
+#    effects:
+#      - pulse:
+#      - flicker:
+#      - strobe:
+#      - random:
+
+# Group 2:
+# to use RGB light, uncomment it's section and comment the monochromatic lights
+  - platform: monochromatic
+    name: "Channel 4"
+    output: output_ch4
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 5"
+    output: output_ch5
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 6"
+    output: output_ch6
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+#  - platform: rgb
+#    name: "RGB2"
+#    # Output channels may need swapping to match the wiring of your light
+#    red: output_ch4
+#    green: output_ch5
+#    blue: output_ch6
+#    effects:
+#      - pulse:
+#      - flicker:
+#      - strobe:
+#      - random:
+
+# Group 3:
+# to use RGB light, uncomment it's section and comment the monochromatic lights
+  - platform: monochromatic
+    name: "Channel 7"
+    output: output_ch7
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 8"
+    output: output_ch8
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 9"
+    output: output_ch9
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+#  - platform: rgb
+#    name: "RGB3"
+#    # Output channels may need swapping to match the wiring of your light
+#    red: output_ch7
+#    green: output_ch8
+#    blue: output_ch9
+#    effects:
+#      - pulse:
+#      - flicker:
+#      - strobe:
+#      - random:
+
+# Group 4:
+# to use RGB light, uncomment it's section and comment the monochromatic lights
+  - platform: monochromatic
+    name: "Channel 10"
+    output: output_ch10
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 11"
+    output: output_ch11
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 12"
+    output: output_ch12
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+#  - platform: rgb
+#    name: "RGB4"
+#    # Output channels may need swapping to match the wiring of your light
+#    red: output_ch10
+#    green: output_ch11
+#    blue: output_ch12
+#    effects:
+#      - pulse:
+#      - flicker:
+#      - strobe:
+#      - random:
+
+# Group 5:
+# to use RGB light, uncomment it's section and comment the monochromatic lights
+  - platform: monochromatic
+    name: "Channel 13"
+    output: output_ch13
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 14"
+    output: output_ch14
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+  - platform: monochromatic
+    name: "Channel 15"
+    output: output_ch15
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+#  - platform: rgb
+#    name: "RGB5"
+#    # Output channels may need swapping to match the wiring of your light
+#    red: output_ch13
+#    green: output_ch14
+#    blue: output_ch15
+#    effects:
+#      - pulse:
+#      - flicker:
+#      - strobe:
+#      - random:
+
+# Ungrouped light (always available)
+  - platform: monochromatic
+    name: "Channel 16"
+    output: output_ch16
+    effects:
+      - pulse:
+      - flicker:
+      - strobe:
+
+# The output definitions should not need to be changed
+output:
+  - platform: ledc
+    pin: GPIO25
+    id: output_ch1
+  - platform: ledc
+    pin: GPIO26
+    id: output_ch2
+  - platform: ledc
+    pin: GPIO27
+    id: output_ch3
+  - platform: ledc
+    pin: GPIO14
+    id: output_ch4
+  - platform: ledc
+    pin: GPIO12
+    id: output_ch5
+  - platform: ledc
+    pin: GPIO13
+    id: output_ch6
+  - platform: ledc
+    pin: GPIO15
+    id: output_ch7
+  - platform: ledc
+    pin: GPIO2
+    id: output_ch8
+  - platform: ledc
+    pin: GPIO4
+    id: output_ch9
+  - platform: ledc
+    pin: GPIO16
+    id: output_ch10
+  - platform: ledc
+    pin: GPIO17
+    id: output_ch11
+  - platform: ledc
+    pin: GPIO5
+    id: output_ch12
+  - platform: ledc
+    pin: GPIO18
+    id: output_ch13
+  - platform: ledc
+    pin: GPIO19
+    id: output_ch14
+  - platform: ledc
+    pin: GPIO21
+    id: output_ch15
+  - platform: ledc
+    pin: GPIO22
+    id: output_ch16
