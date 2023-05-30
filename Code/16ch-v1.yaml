@@ -30,6 +30,9 @@ wifi:
 
 captive_portal:
 
+web_server:
+  port: 80
+
 improv_serial:
 
 esp32_improv:
@@ -37,7 +40,7 @@ esp32_improv:
   
 dashboard_import:
   package_import_url: github://AlexCPU/LEDBrickHome/Code/16ch-v1.yaml@main
-  import_full_config: false
+  import_full_config: true
 
 binary_sensor:
   - platform: status
@@ -75,6 +78,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 2"
@@ -82,6 +86,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 3"
@@ -89,6 +94,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
 #  - platform: rgb
 #    name: "RGB1"
@@ -110,6 +116,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 5"
@@ -117,6 +124,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 6"
@@ -124,6 +132,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
 #  - platform: rgb
 #    name: "RGB2"
@@ -145,6 +154,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 8"
@@ -152,6 +162,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 9"
@@ -159,6 +170,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
 #  - platform: rgb
 #    name: "RGB3"
@@ -180,6 +192,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 11"
@@ -187,6 +200,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 12"
@@ -194,6 +208,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
 #  - platform: rgb
 #    name: "RGB4"
@@ -215,6 +230,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 14"
@@ -222,6 +238,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
   - platform: monochromatic
     name: "Channel 15"
@@ -229,6 +246,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
 #  - platform: rgb
 #    name: "RGB5"
@@ -249,6 +267,7 @@ light:
     effects:
       - pulse:
       - flicker:
+          intensity: 10%
       - strobe:
 
 # The output definitions should not need to be changed
