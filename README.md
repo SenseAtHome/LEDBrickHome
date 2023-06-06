@@ -10,9 +10,9 @@ Different versions of LEDBrickHome may exist in the future with different number
 
 To maximise available number of channels, RGB (4-pin) outputs are shared with single colour (2-pin) outputs.  In other words, a 16 PWM controller can support a total of 16 different outputs of a single colour, but for each RGB output used, three single colour outputs are lost.
 
-| Version | Total PWM Outputs | 2-pin outputs | 4-pin outputs |
-| --- | --- | --- | --- |
-| 16ch-v1 | 16 | 16 | 5 |
+| Version | Total PWM Outputs | 2-pin outputs | 4-pin outputs | Dimensions |
+| --- | --- | --- | --- | --- |
+| 16ch-v1.0 | 16 | 16 | 5 | 96 x 45 mm
 
 ### 16ch-v1
 
