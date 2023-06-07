@@ -12,13 +12,18 @@ To maximise available number of channels, RGB (4-pin) outputs are shared with si
 
 | Version | Total PWM Outputs | 2-pin outputs | 4-pin outputs | Dimensions |
 | --- | --- | --- | --- | --- |
-| 16ch-v1.0 | 16 | 16 | 5 | 96 x 45 mm
+| 16ch-v1.0 | 16 | 16 | 5 | 96 x 45 mm |
+| 16ch-v1.1 | 16 | 16 | 5 | 68 x 45 mm |
 
 ### 16ch-v1
 
 16ch-v1 is based on an ESP32-WROOM (exact memory size does not matter), uses a CP2102N ([drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)) for it's USB->UART bridge, and is powered by a USB-C connector.  Outputs are grouped in blocks and identified on the silkscreen which 2-pin outputs are shared with 4-pin outputs.
 
 ![PCB showing ESP32 and output connectors](Docs/Images/16ch-v1.jpg)
+
+### 16ch-v1.1
+
+16ch-v1.1 is a smaller version of the previous 16ch design, using a CH340C ([drivers](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)) for it's USB->UART bridge, but is otherwise functionally identical.
 
 ## Effects
 Various effects are available in ESPHome, which are explained in the [documentation](https://esphome.io/components/light/index.html#light-effects), some of these are included in the code examples already.  For flickering torch effects, the default flicker intensity (of 1.5%) will want to be increased.  The demo video above has flicker set at 10%.
