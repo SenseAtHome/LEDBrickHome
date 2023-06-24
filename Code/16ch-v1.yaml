@@ -30,9 +30,6 @@ wifi:
 
 captive_portal:
 
-web_server:
-  port: 80
-
 improv_serial:
 
 esp32_improv:
