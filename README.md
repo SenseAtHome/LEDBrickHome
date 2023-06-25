@@ -28,7 +28,7 @@ To maximise available number of channels, RGB (4-pin) outputs are shared with si
 ## Effects
 Various effects are available in ESPHome, which are explained in the [documentation](https://esphome.io/components/light/index.html#light-effects), some of these are included in the code examples already.  For flickering torch effects, the default flicker intensity (of 1.5%) will want to be increased.  The demo video above has flicker set at 10%.
 
-## Compatability
+## Compatibility
 
 LEDBrickHome is compatible with lighting kits that use a JST SUR connector with 5V on pin 1, and switched 0V on pin 2 (plus pins 3 & 4 for RGB connectors).
 
