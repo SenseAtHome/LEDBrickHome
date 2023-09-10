@@ -32,6 +32,14 @@ Various effects are available in ESPHome, which are explained in the [documentat
 
 LEDBrickHome is compatible with lighting kits that use a JST SUR connector with 5V on pin 1, and switched 0V on pin 2 (plus pins 3 & 4 for RGB connectors).
 
+The below table shows the results of our testing.  You should verify connector type and pinout yourself for your own project.
+
+| Light System | Compatible? |
+| --- | --- |
+| Light My Bricks | :white_check_mark: |
+| Briksmax | :white_check_mark: |
+| Kyglaring | :white_check_mark: |
+
 ![2 pin JST SUR connector](Docs/Images/2-pin.jpg)
 
 ![4 pin JST SUR connector](Docs/Images/4-pin.jpg)
