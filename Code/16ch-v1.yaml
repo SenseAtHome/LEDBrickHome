@@ -52,6 +52,8 @@ button:
   - platform: restart
     id: restart_button
     name: "${friendly_name} Restart"
+  - platform: factory_reset
+    name: Restart with Factory Default Settings
 
 time:
   - platform: sntp
