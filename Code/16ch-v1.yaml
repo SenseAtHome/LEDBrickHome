@@ -56,6 +56,10 @@ button:
 time:
   - platform: sntp
 
+switch:
+  - platform: factory_reset
+    name: Factory Reset
+
 text_sensor:
   - platform: wifi_info
     ip_address:
