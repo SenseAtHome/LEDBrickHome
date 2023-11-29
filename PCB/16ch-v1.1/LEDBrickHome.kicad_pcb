@@ -4665,7 +4665,7 @@
   (gr_text "RGB outputs share the control with single channel\noutputs from their group.  They cannot be controlled\nseparately, but can be used at the same time.\n\nOutputs are labelled by channel number." (at 75.946 69.088) (layer "B.SilkS") (tstamp 9001b359-37d1-492d-a975-d0b18a95c334)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
-  (gr_text "https://github.com/AlexCPU/LEDBrickHome\n16ch-v1.1" (at 74.676 75.438) (layer "B.SilkS") (tstamp f04a5c54-01b2-4b04-b9d4-1ea0ec4ca8c1)
+  (gr_text "https://github.com/SenseAtHome/LEDBrickHome\n16ch-v1.1" (at 74.676 75.438) (layer "B.SilkS") (tstamp f04a5c54-01b2-4b04-b9d4-1ea0ec4ca8c1)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
   (gr_text "RGB3" (at 51.308 93.98 90) (layer "F.SilkS") (tstamp 038e3c73-ab89-4f43-a97a-eb1cf2b03349)
