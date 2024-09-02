@@ -1,7 +1,7 @@
 substitutions:
   name: "ledbrickhome-16ch"
   friendly_name: "LEDBrickHome"
-  project_name: "AlexCPU.ledbrickhome-16ch"
+  project_name: "SenseAtHome.ledbrickhome-16ch"
   project_version: "1.0"
   hidden_ssid: "false"
 
@@ -23,6 +23,7 @@ logger:
 api:
 
 ota:
+  - platform: esphome
 
 wifi:
   fast_connect: ${hidden_ssid}
