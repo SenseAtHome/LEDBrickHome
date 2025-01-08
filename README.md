@@ -34,11 +34,13 @@ LEDBrickHome is compatible with lighting kits that use a JST SUR connector with 
 
 The below table shows the results of our testing.  You should verify connector type and pinout yourself for your own project.
 
-| Light System | Compatible? |
-| --- | --- |
-| Light My Bricks | :white_check_mark: |
-| Briksmax | :white_check_mark: |
-| Kyglaring | :white_check_mark: |
+| Light System | Compatible? | Notes |
+| --- | --- | --- |
+| Light My Bricks V1 | :white_check_mark: | | 
+| Light My Bricks V2 | :x: | Swapped to a flat ribbon style connector |
+| Briksmax V1 | :white_check_mark: | |
+| Briksmax V2 | :x: | Similar but not compatible with JST SUR |
+| Kyglaring | :white_check_mark: | |
 
 ![2 pin JST SUR connector](Docs/Images/2-pin.jpg)
 
