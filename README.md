@@ -6,6 +6,9 @@ Wi-Fi controller compatible with various Lego Lighting kits, designed to enable 
 
 ## Versions
 
+> [!WARNING]  
+> Versions up to and included v1.1 have a hardware design issue that prevents the use of USB-C to USB-C cables.  They will work correctly with USB-A to USB-C cables.
+
 Different versions of LEDBrickHome may exist in the future with different numbers of output connectors (e.g. to reduce cost or size).
 
 To maximise available number of channels, RGB (4-pin) outputs are shared with single colour (2-pin) outputs.  In other words, a 16 PWM controller can support a total of 16 different outputs of a single colour, but for each RGB output used, three single colour outputs are lost.
