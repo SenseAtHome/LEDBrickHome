@@ -17,6 +17,7 @@ To maximise available number of channels, RGB (4-pin) outputs are shared with si
 | --- | --- | --- | --- | --- |
 | 16ch-v1.0 | 16 | 16 | 5 | 96 x 45 mm |
 | 16ch-v1.1 | 16 | 16 | 5 | 68 x 45 mm |
+| 16ch-v1.2 | 16 | 16 | 5 | 68 x 45 mm |
 
 ### 16ch-v1
 
@@ -24,7 +25,7 @@ To maximise available number of channels, RGB (4-pin) outputs are shared with si
 
 ![PCB showing ESP32 and output connectors](Docs/Images/16ch-v1.jpg)
 
-### 16ch-v1.1
+### 16ch-v1.1 through v1.2
 
 16ch-v1.1 is a smaller version of the previous 16ch design, using a CH340C ([drivers](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)) for it's USB->UART bridge, but is otherwise functionally identical.
 
